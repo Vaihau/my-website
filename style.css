@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    background: dodgerblue;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav {
+    padding: 2px 1rem;
+    width: 100%;
+    background: cornflowerblue;
+
+    position:sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+select {
+    padding: 4px 12px;
+    appearance: base-select;
+}
+
+#separator {
+    height: 20px;
+    border-left: 1px solid white;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.content {
+    padding: 2rem;
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#home {
+    background: rgb(90, 224, 217);
+    font-size: xx-large;
+}
+
+#intro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#code {
+    border-radius: 10px;
+}
+
+#contact {
+    background: dodgerblue;
+    height: 60vh;
+}
+
+.contact-content {
+    width: 100vw;
+    height: 60vh;
+    border-radius: 1rem;
+    font-size: x-large;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#footer3 {
+    font-size: large;
+}
+
+#mail-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (width < 1200px) {
+  #code {
+    width: 486px;
+    height: 324px;
+  }
+}
+
+@media (width < 960px) {
+  #code {
+    width: 324px;
+    height: 216px;
+  }
+
+  #home {
+    font-size: large;
+  }
+}
+
+@media (width < 720px) {
+  .content {
+    flex-direction: column;
+    width: 100vw;
+    height: 40vh;
+  }
+
+  #code {
+    width: 324px;
+    height: 216px;
+  }
+
+  #home {
+    font-size: large;
+  }
+}
+
+button {
+    padding: 1rem;
+    border-radius: 100rem;
+    background: rgb(243, 226, 226);
+    border: none;
+    color: dodgerblue;
+}
+
+button:hover {
+  box-shadow: 0 10px 25px rgba(177, 206, 236, 0.9);
+}
+
+#btn-copy {
+    padding: 2px;
+    background: none;
+    border-radius: 3px;
+}
+
+#btn-copy:hover {
+  box-shadow: 0 0 0;
+  background: rgb(7, 116, 225);
+}
+
+#border {
+    width: 90vw;
+    border-top: 1px solid white;
+}
+
+footer {
+    padding: 1rem;
+    background: dodgerblue;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}

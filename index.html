@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "script.js"></script>
+        <title>Vaihau Arapari</title>
+        <link rel = "icon" type = "image/png" href = "/assets/fourche.png">
+        <style>
+            nav > * {
+                width: 100vw;
+                display: flex;
+            }
+            nav > span {
+                justify-content: center; 
+                font-family: 'Brush Script MT'; 
+                font-size: xxx-large;
+            }
+            nav :nth-child(3) {
+                flex-direction: row-reverse;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            @media (width < 480px) {
+                nav > span {
+                    display: none;
+                }
+
+                nav :nth-child(3) {
+                    font-size: small;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <img src = "assets/fourche.png" alt = "Logo" width = "72" height = "72">
+            </div>
+            <span>V.A</span>
+            <div>
+                <select name = "language" id = "language">
+                    <option value = "french" selected>Français</option>
+                    <option value = "english">English</option>
+                </select>
+                <div id = 'separator'></div>
+                <ul class = 'nav-links'>
+                    <li><a href = "#contact">Contact</a></li>
+                    <li><a href = "#home">Accueil</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class = 'content' id = "home" tabindex = "0">
+            <div id = 'intro'>
+                <h2>Bienvenue sur mon site</h2>
+                <p>Je suis Vaihau développeur de Polynésie française</p>
+                &#127477;&#127467;
+            </div>
+            <img src = "assets/code.jpg" alt = "Code" id = 'code' width = "840" height = "560">
+        </section>
+        <section class = 'content' id = "contact" tabindex = "0">
+            <div class = 'contact-content' id = 'footer1'>
+                <a href = "notice.html">
+                    <button>Mentions légales</button>
+                </a>
+                <a href = "policy.html">
+                    <button>Politique de confidentialité</button>
+                </a>
+            </div>
+            <div class = 'contact-content' id = 'footer2'>
+                <img src = "assets/fourche.png" alt = "Logo" width = "128" height = "128">
+                <p>Vaihau Arapari</p>
+            </div>
+            <div class = 'contact-content' id = 'footer3'>
+                <span id = 'mail-container'>
+                        Courriel: <p id = 'mail'>a.vaihau@protonmail.com</p>
+                    <button id = 'btn-copy'>
+                        <img src = "assets/copie.png" alt = "Copy" width = "32" height = "32">
+                    </button>
+                </span>
+                    
+                <p>Github: <a href = "https://github.com/Vaihau">https://github.com/Vaihau</a></p>
+            </div>
+        </section>
+        <div id = 'border'></div>
+        <footer>
+            <p>Vaihau Arapari &copy;</p>
+        </footer>
+    </body>
+</html>

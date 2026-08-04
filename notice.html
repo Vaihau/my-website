@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Mentions légales</title>
+    <link rel = "icon" type = "image/png" href = "/assets/fourche.png">
+    <style>
+        b {
+            font-size: large;
+            color: blue;
+        }
+        #title {
+            font-size: xx-large;
+        }
+        #content {
+            width: 70vw; 
+            background: white; 
+            border-radius: 10px; 
+            margin: 0; 
+            color: black; 
+            padding: 2rem; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 2rem
+        }
+        .border {
+            width: 100%; 
+            border: 1px solid black;
+        }
+        .text-section {
+            display: flex; 
+            flex-direction: column; 
+            gap: 1rem;
+        }
+        nav > * {
+            width: 100vw;
+            display: flex;
+        }
+        nav :nth-child(3) {
+            flex-direction: row-reverse;
+        }
+        nav > span {
+            justify-content: center; 
+            font-family: 'Brush Script MT'; 
+            font-size: xxx-large;
+        }
+        @media (width < 480px) {
+            #content {
+                width: 95vw;
+            }
+        }
+    </style>
+</head>
+<body style = "gap: 2rem;">
+    <nav>
+        <div>
+            <img src = "assets/fourche.png" alt = "Logo" width = "72" height = "72">
+        </div>
+        <span>V.A</span>
+        <div>
+            <ul class = 'nav-links'>
+                <li><a href = "index.html">Accueil</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <p id = "title">Mentions légales</p>
+
+    <div id = "content">
+        <p style = "font-size: large;">Dernière mise à jour: le 29 Juillet 2026</p>
+        <div class = "border"></div>
+        <div class = "text-section">
+            <b>1. Contact</b>
+            <p>Pour toute question ou demande, vous pouvez nous contacter à l’adresse suivante :</p>
+            <p>a.vaihau@protonmail.com</p>
+        </div>
+        <div class = "border"></div>
+        <div class = "text-section">
+            <b>2. Hébergement</b>
+            <p>Le site est hébergé par:</p>
+            <p>DigitalOcean Holdings, Inc</p>
+            <p>Broomfield, Colorado, US</p>
+        </div>
+        <div class = "border"></div>
+        <div class = "text-section">
+            <b>3. Objet du site</b>
+            <p>Il s'agit d'un site d’information indépendant dédié à ma personne.</p>
+        </div>
+        <div class = "border"></div>
+        <div class = "text-section">
+            <b>4. Propriété intellectuelle</b>
+            <p>L’ensemble des contenus présents sur ce site, notamment les textes, visuels, éléments graphiques, logo, icônes, structure, mise en page et, le cas échéant, certains éléments de code, est protégé par le droit de la propriété intellectuelle.</p>
+            <p>Toute reproduction, représentation, diffusion, adaptation, modification, extraction ou exploitation, totale ou partielle, de tout ou partie du site, par quelque procédé que ce soit, sans autorisation préalable écrite, est interdite, sauf dans les cas prévus par la loi.</p>
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <img src = "assets/fourche.png" alt = "Logo" width = "48" height = "48">
+                <a style = "color: black;" target = "_blank" href = "https://icons8.com/icon/gBudDG6MMLR3/code-fork">Fourche de code</a> 
+                icon by 
+                <a style = "color: black;" target="_blank" href="https://icons8.com">Icons8</a>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <img src = "assets/copie.png" alt = "Logo" width = "48" height = "48">
+                <a style = "color: black;" target = "_blank" href = "https://icons8.com/icon/SSitHzp4v2x7/copy">Copie</a> 
+                icon by 
+                <a style = "color: black;" target="_blank" href="https://icons8.com">Icons8</a>
+            </div>
+        </div>
+        <div class = "border"></div>
+        <div class = "text-section">
+            <b>5. Responsabilité</b>
+            <p>Les informations publiées sur le site sont fournies à titre indicatif.</p>
+        </div>
+        <div class = "border"></div>
+        <div class = "text-section">
+            <b>6. Liens externes</b>
+            <p>Le site peut contenir des liens vers des sites tiers.</p>
+            <p>Je ne saurait être tenu responsable du contenu, du fonctionnement, de la disponibilité ou des politiques de confidentialité de ces sites externes.</p>
+        </div>
+    </div>
+
+    <a href = "index.html" style = "margin-bottom: 2rem; font-size: large;">
+        <u>Retour à l'accueil</u>
+    </a>
+</body>
+</html>
